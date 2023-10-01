@@ -35,7 +35,8 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Build your team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Rekomendasi Rumah
+                                sakit</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -46,7 +47,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Manage team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Chat Dokter</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -57,7 +58,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Hire members</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Konsultasi</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -68,7 +69,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Team Chat</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Artikerl</span>
                         </li>
 
                         <li class="flex space-x-3 line-through decoration-gray-500">
@@ -80,7 +81,8 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500">Join team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500">Membuat rekomendasi
+                                RS</span>
                         </li>
                         <li class="flex space-x-3 line-through decoration-gray-500">
                             <!-- Icon -->
@@ -91,8 +93,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500">Complete
-                                documentation</span>
+                            <span class="text-base font-normal leading-tight text-gray-500">Membuat Room Konsul</span>
                         </li>
                         <li class="flex space-x-3 line-through decoration-gray-500">
                             <!-- Icon -->
@@ -135,7 +136,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Konsultasi</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Membuat Konsultasi</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -146,7 +147,8 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Team Chat</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Membuat Rekomendasi
+                                RS</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -157,7 +159,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Search Team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Membuat Artikel</span>
                         </li>
                         <li class="flex space-x-3">
                             <!-- Icon -->
@@ -168,7 +170,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ">Find a job</span>
+                            <span class="text-base font-normal leading-tight text-gray-500 ">Edit Konsultasi</span>
                         </li>
                         <li class="flex space-x-3 line-through decoration-gray-500">
                             <!-- Icon -->
@@ -179,7 +181,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500">Build your team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500">FItur Berlangganan</span>
                         </li>
                         <li class="flex space-x-3 line-through decoration-gray-500">
                             <!-- Icon -->
@@ -190,7 +192,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500">Manage team</span>
+                            <span class="text-base font-normal leading-tight text-gray-500">Kuis</span>
                         </li>
                         <li class="flex space-x-3 line-through decoration-gray-500">
                             <!-- Icon -->
@@ -201,7 +203,7 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500">Hire members</span>
+                            <span class="text-base font-normal leading-tight text-gray-500">Hapus Artikel</span>
                         </li>
                     </ul>
 

@@ -1,6 +1,8 @@
 @extends('user.layout.layout')
 @section('content')
 {{-- recomendation hospital card --}}
+
+
 <div class="mx-10 my-10 font-Poppins">
     <h1 class="text-xl">Rekomendasi Rumah Sakit </h1>
     <p class="text-sm mb-4">Berikut adalah rekomendasi rumah sakit untuk penderita TBC</p>

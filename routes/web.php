@@ -3,8 +3,10 @@
 use App\Models\page;
 use App\Models\User;
 use App\Models\admin;
+use App\Models\Barang;
 use App\Models\Category;
 use App\Models\rumahsakit;
+use App\Models\appointment;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
@@ -13,11 +15,15 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\roleController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PesanController;
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\gejalaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\konsultasiController;
 use App\Http\Controllers\rumahsakitController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\pagePenyebabController;
 use App\Http\Controllers\artikelDokterController;
 use App\Http\Controllers\DashboardPostController;
@@ -66,8 +72,10 @@ Route::get('/quiz', function () {
     return view('quiz');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
+Route::get('/obat-obatan', function () {
+    return view('profile', [
+        'barang' => Barang::all()
+    ]);
 });
 
 Route::get('/artikel', [PostController::class, 'index']);
@@ -173,3 +181,38 @@ Route::get('/detail-konsultasi', function () {
 // Route::get('/landingpage', function () {
 //     return view('detail-konsultasi');
 // });
+
+
+Route::get('index', function () {
+    return view('index');
+});
+
+Route::resource('barang', BarangController::class);
+
+Route::get('/pesan/{id}', [PesanController::class, 'index']);
+Route::post('pesan/{id}', [PesanController::class, 'pesan']);
+Route::get('/checkout', [PesanController::class, 'checkout']);
+Route::delete('checkout/{id}', [PesanController::class, 'delete']);
+
+Route::get('/konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
+
+
+
+Route::get('profile', function () {
+    return view('profile-user');
+});
+
+
+Route::resource('konsultasi-langsung', DoctorController::class);
+Route::resource('appointment', AppointmentController::class);
+
+Route::get('ashma', function () {
+    return view('penyakit3d.ashma');
+});
+
+
+Route::get('antriandokter', function () {
+    return view('antriandokter', [
+        'appointment' => appointment::latest()->first(),
+    ]);
+});

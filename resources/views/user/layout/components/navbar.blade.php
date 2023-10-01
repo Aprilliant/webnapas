@@ -194,9 +194,11 @@
     </form>
 
 
+
     <div class="   flex items-center space-x-4">
+
         <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start"
-            class="w-10 h-10 rounded-full cursor-pointer" src="img/profile.jpg" alt="User dropdown">
+            class="w-10 h-10 rounded-full cursor-pointer" src="{{ asset('img/profile.jpg') }}" alt="User dropdown">
 
         <!-- Dropdown menu -->
         <div id="userDropdown"
@@ -207,17 +209,26 @@
             </div>
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
                 <li>
-                    <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    <a href="{{ url('profile') }}"
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
                 </li>
+
                 <li>
                     <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Riwayat
+                        Belanja
+                    </a>
                 </li>
+
                 <li>
                     <a href="#"
-                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Antrian
+                        Konsultasi</a>
                 </li>
+
+
+
+
             </ul>
             <div class="py-1">
 

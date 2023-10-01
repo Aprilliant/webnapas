@@ -98,7 +98,7 @@
                         </label>
                         <textarea type="text" id="body" name="body" value="{{ old('isi') }}"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Pengertian " required> {{ get_meta_value('isi') }} </textarea>
+                            placeholder="Pengertian " required> </textarea>
                     </div>
                     {{-- <div>
                         <label for="body"

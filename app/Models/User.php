@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\post;
+use app\Models\Pesanan;
+use App\Models\doctor_schedule;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
@@ -65,5 +67,16 @@ class User extends Authenticatable implements MustVerifyEmail
     public function konsultasi()
     {
         return $this->hasMany(konsultasi::class);
+    }
+
+    public function pesanan()
+    {
+        return $this->hasMany(Pesanan::class, 'user_id', 'id');
+    }
+
+    // Di dalam file App\Models\User.php
+    public function schedules()
+    {
+        return $this->hasMany(doctor_schedule::class, 'doctor_id'); // ganti 'doctor_id' dengan nama kolom yang benar pada tabel schedules.
     }
 }

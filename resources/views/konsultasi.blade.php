@@ -13,6 +13,56 @@
 </div>
 @endrole
 
+
+
+<div
+    class="mt-10 mx-10 flex flex-col items-start justify-center space-y-4 py-8 px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
+    <div class="max-w-lg">
+        <h1 class="text-2xl font-bold text-gray-800">Konsultasi Dokter Online</h1>
+        <p class="mt-2 text-gray-600">Temukan solusi kesehatan Anda dengan mudah bersama dokter terpercaya kami melalui
+            layanan chat online.Diskusi masalah
+            kesehatan Anda dengan dokter kami secara real-time.</p>
+    </div>
+
+
+    <div>
+        <nav class=" flex   mx-10 aria-label=" Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="/index"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <a href="{{ url('konsultasi-langsung') }}"
+                            class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Konsulasi
+                            Langsung</a>
+                    </div>
+                </li>
+
+
+            </ol>
+        </nav>
+    </div>
+
+
+
+</div>
+
+
+
 <div id="medium-modal-1" tabindex="-1"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full ">
     <div class="relative p-4 w-full max-w-2xl h-full md:h-auto ">
@@ -84,7 +134,219 @@
 </div>
 
 
+
+<div class="container 2xl:px-52">
+
+
+    <section class="2xl:py-24 lg:py-20 py-16">
+        <div class="container 2xl:px-44">
+            <div class=" 2xl:mb-12">
+                <div class="grid lg:grid-cols-3 gap-6">
+
+                    <div>
+                        <div class="bg-white shadow rounded-md text-center">
+                            <img src="https://cilacap.org/wp-content/uploads/2022/08/rumah-sakit-margono-purwokerto.jpg"
+                                alt="">
+                            <img src="{{ asset('img/img-1.png') }}" alt=""
+                                class="rounded-full shadow-md border-4 border-white h-28 mx-auto -mt-14">
+
+                            <div class="p-7">
+                                <p class="font-medium text-gray-500">@Aspen</p>
+                                <h3 class="text-xl font-bold mb-2">Aspen Curtis</h3>
+                                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt.</p>
+
+                                <div class="flex items-center justify-center gap-4 mt-7">
+                                    <a href="#"
+                                        class="bg-sky-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 124 124" id="linkedin">
+                                            <path
+                                                d="M102.4 70.7v28.5c0 .7-.6 1.3-1.3 1.3H86.4c-.7 0-1.3-.6-1.3-1.3V72.7c0-7-2.5-11.8-8.8-11.8-4.8 0-7.6 3.2-8.9 6.3-.5 1.1-.6 2.7-.6 4.2v27.8c0 .7-.6 1.3-1.3 1.3H50.9c-.7 0-1.3-.6-1.3-1.3 0-7.1.2-41.4 0-49.4 0-.7.6-1.3 1.3-1.3h14.7c.7 0 1.3.6 1.3 1.3v6.1c0 .1-.1.1-.1.2h.1v-.2c2.3-3.5 6.4-8.6 15.6-8.6 11.4 0 19.9 7.5 19.9 23.4zM24 100.6h14.7c.7 0 1.3-.6 1.3-1.3V49.8c0-.7-.6-1.3-1.3-1.3H24c-.7 0-1.3.6-1.3 1.3v49.5c.1.7.6 1.3 1.3 1.3z">
+                                            </path>
+                                            <circle cx="30.9" cy="32.7" r="9.3"></circle>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-sky-500 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="twitter">
+                                            <path
+                                                d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-blue-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="facebook">
+                                            <path
+                                                d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bg-white shadow rounded-md text-center">
+                            <img src="https://cilacap.org/wp-content/uploads/2022/08/rumah-sakit-margono-purwokerto.jpg"
+                                alt="">
+                            <img src="{{ asset('img/img-1.png') }}" alt=""
+                                class="rounded-full shadow-md border-4 border-white h-28 mx-auto -mt-14">
+
+                            <div class="p-7">
+                                <p class="font-medium text-gray-500">@Aspen</p>
+                                <h3 class="text-xl font-bold mb-2">Aspen Curtis</h3>
+                                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt.</p>
+
+                                <div class="flex items-center justify-center gap-4 mt-7">
+                                    <a href="#"
+                                        class="bg-sky-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 124 124" id="linkedin">
+                                            <path
+                                                d="M102.4 70.7v28.5c0 .7-.6 1.3-1.3 1.3H86.4c-.7 0-1.3-.6-1.3-1.3V72.7c0-7-2.5-11.8-8.8-11.8-4.8 0-7.6 3.2-8.9 6.3-.5 1.1-.6 2.7-.6 4.2v27.8c0 .7-.6 1.3-1.3 1.3H50.9c-.7 0-1.3-.6-1.3-1.3 0-7.1.2-41.4 0-49.4 0-.7.6-1.3 1.3-1.3h14.7c.7 0 1.3.6 1.3 1.3v6.1c0 .1-.1.1-.1.2h.1v-.2c2.3-3.5 6.4-8.6 15.6-8.6 11.4 0 19.9 7.5 19.9 23.4zM24 100.6h14.7c.7 0 1.3-.6 1.3-1.3V49.8c0-.7-.6-1.3-1.3-1.3H24c-.7 0-1.3.6-1.3 1.3v49.5c.1.7.6 1.3 1.3 1.3z">
+                                            </path>
+                                            <circle cx="30.9" cy="32.7" r="9.3"></circle>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-sky-500 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="twitter">
+                                            <path
+                                                d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-blue-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="facebook">
+                                            <path
+                                                d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bg-white shadow rounded-md text-center">
+                            <img src="https://cilacap.org/wp-content/uploads/2022/08/rumah-sakit-margono-purwokerto.jpg"
+                                alt="">
+                            <img src="{{ asset('img/img-1.png') }}" alt=""
+                                class="rounded-full shadow-md border-4 border-white h-28 mx-auto -mt-14">
+
+                            <div class="p-7">
+                                <p class="font-medium text-gray-500">@Aspen</p>
+                                <h3 class="text-xl font-bold mb-2">Aspen Curtis</h3>
+                                <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt.</p>
+
+                                <div class="flex items-center justify-center gap-4 mt-7">
+                                    <a href="#"
+                                        class="bg-sky-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 124 124" id="linkedin">
+                                            <path
+                                                d="M102.4 70.7v28.5c0 .7-.6 1.3-1.3 1.3H86.4c-.7 0-1.3-.6-1.3-1.3V72.7c0-7-2.5-11.8-8.8-11.8-4.8 0-7.6 3.2-8.9 6.3-.5 1.1-.6 2.7-.6 4.2v27.8c0 .7-.6 1.3-1.3 1.3H50.9c-.7 0-1.3-.6-1.3-1.3 0-7.1.2-41.4 0-49.4 0-.7.6-1.3 1.3-1.3h14.7c.7 0 1.3.6 1.3 1.3v6.1c0 .1-.1.1-.1.2h.1v-.2c2.3-3.5 6.4-8.6 15.6-8.6 11.4 0 19.9 7.5 19.9 23.4zM24 100.6h14.7c.7 0 1.3-.6 1.3-1.3V49.8c0-.7-.6-1.3-1.3-1.3H24c-.7 0-1.3.6-1.3 1.3v49.5c.1.7.6 1.3 1.3 1.3z">
+                                            </path>
+                                            <circle cx="30.9" cy="32.7" r="9.3"></circle>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-sky-500 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="twitter">
+                                            <path
+                                                d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="bg-blue-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                        <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24" id="facebook">
+                                            <path
+                                                d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="mt-14">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
+
+
+            <div>
+                <div class="bg-white shadow rounded-md text-center p-7">
+                    <img src="https://cilacap.org/wp-content/uploads/2022/08/rumah-sakit-margono-purwokerto.jpg" alt=""
+                        class="rounded-full shadow-md border-4 border-white h-28 mx-auto">
+
+                    <div class="mt-7">
+                        <h3 class="text-2xl font-bold mb-0.5">Randy Gouse</h3>
+                        <p class="font-medium text-gray-500 mb-4">CEO & Co-Founder</p>
+                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+
+                        <div class="flex items-center justify-center gap-4 mt-7">
+                            <a href="#" class="bg-sky-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                <svg class="fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"
+                                    id="linkedin">
+                                    <path
+                                        d="M102.4 70.7v28.5c0 .7-.6 1.3-1.3 1.3H86.4c-.7 0-1.3-.6-1.3-1.3V72.7c0-7-2.5-11.8-8.8-11.8-4.8 0-7.6 3.2-8.9 6.3-.5 1.1-.6 2.7-.6 4.2v27.8c0 .7-.6 1.3-1.3 1.3H50.9c-.7 0-1.3-.6-1.3-1.3 0-7.1.2-41.4 0-49.4 0-.7.6-1.3 1.3-1.3h14.7c.7 0 1.3.6 1.3 1.3v6.1c0 .1-.1.1-.1.2h.1v-.2c2.3-3.5 6.4-8.6 15.6-8.6 11.4 0 19.9 7.5 19.9 23.4zM24 100.6h14.7c.7 0 1.3-.6 1.3-1.3V49.8c0-.7-.6-1.3-1.3-1.3H24c-.7 0-1.3.6-1.3 1.3v49.5c.1.7.6 1.3 1.3 1.3z">
+                                    </path>
+                                    <circle cx="30.9" cy="32.7" r="9.3"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-sky-500 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                    viewBox="0 0 24 24" id="twitter">
+                                    <path
+                                        d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="bg-blue-700 shadow rounded-full flex items-center justify-center h-9 w-9">
+                                <svg class="fill-white h-5 w-5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                    viewBox="0 0 24 24" id="facebook">
+                                    <path
+                                        d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
 <div class="mx-5 grid grid-cols-1 sm:grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-3 mt-10 mb-10">
+
 
     @foreach($konsultasi as $konsul)
     <div
@@ -406,7 +668,7 @@
                 </div>
 
                 <div>
-                    <a href="#"
+                    <a id="sendMessage" href="https://wa.me/081919898656?text=Hallo Dok {{ $konsul->namaDokter }}"
                         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 mx-3  py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Chat</a>
 
                 </div>
@@ -678,6 +940,13 @@
     }
     
     
+</script>
+
+
+<script>
+    document.getElementById("sendMessage").addEventListener("click", function(){
+      window.location.href = "https://wa.me/081919898656?text=Hallo Dok;
+    });
 </script>
 
 @endsection

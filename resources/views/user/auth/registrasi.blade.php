@@ -115,9 +115,8 @@
             </div>
         </div>
 
-        <div class="bg-purple-600 hidden lg:block w-full md:w1/2 xl:w-2/3 h-screen">
-            <img src="https://images.unsplash.com/photo-1633536726481-465c3676851d" alt=""
-                class="w-full h-full object-cover object-center">
+        <div class="bg-white hidden mt-36  lg:block w-full md:w1/2 xl:w-2/3 h-screen">
+            <img src="img/login.png" alt="" class="mx-auto my-auto object-cover object-center">
         </div>
     </section>
 
