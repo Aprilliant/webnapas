@@ -2,44 +2,101 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Order;
 use Illuminate\Http\Request;
+use App\Models\Pesanan;
 
-class OrderController extends Controller
+class orderController extends Controller
 {
-    public function checkout(Request $request)
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-
-        // Set your Merchant Server Key
-        \Midtrans\Config::$serverKey = config('midtrans.server_key');
-        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-        \Midtrans\Config::$isProduction = false;
-        // Set sanitization on (default)
-        \Midtrans\Config::$isSanitized = true;
-        // Set 3DS transaction for credit card to true
-        \Midtrans\Config::$is3ds = true;
-
-        $order = Order::create([
-            'name' => $request->user()->name,
-            'email' => $request->user()->email,
-            'total_price' => 50000 * 1,
-            'qty' => 1,
-            'status' => 'unpaid'
+        return view('Admin.Pesanan.index', [
+            'title' => "Orderan Masuk",
+            'pesanan' => Pesanan::latest()->paginate(5),
         ]);
-        $params = array(
-            'transaction_details' => array(
-                'order_id' => $order->id,
-                'gross_amount' => $order->total_price,
-            ),
-            'customer_details' => array(
-                'name' => $request->user()->name,
-                'email' => $request->user()->email
-            ),
-        );
+    }
 
-        $snapToken = \Midtrans\Snap::getSnapToken($params);
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
 
-        // return view('home', compact('snapToken', 'order'));
-        return response()->json(['snap_token' => $snapToken, 'order' => $order]);
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+
+    public function updateStatus($id, $status)
+    {
+        $pesanan = Pesanan::find($id);
+
+        if ($pesanan) {
+            $pesanan->status = $status;
+            $pesanan->save();
+
+            return redirect()->back()->with('success', 'Status pesanan berhasil diperbarui.');
+        } else {
+            return redirect()->back()->with('error', 'Pesanan tidak ditemukan.');
+        }
     }
 }

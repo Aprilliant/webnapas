@@ -86,7 +86,9 @@
                                 @method('delete')
                                 @csrf
 
-                                <button type="submit" class="text-gray-600 transition hover:text-red-600">
+                                <button id="submit" type="submit" hidden>submit</button>
+                                <button type="button" onclick="onDeleteHandler()"
+                                    class="text-gray-600 transition hover:text-red-600">
                                     <span class="sr-only">Remove item</span>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -116,19 +118,20 @@
                                 <dd>{{ $pesanan->jumlah_harga }}</dd>
                             </div>
 
-                            <div class="flex justify-between">
-                                <dt>VAT</dt>
-                                <dd>£25</dd>
-                            </div>
 
                             <div class="flex justify-between">
                                 <dt>Discount</dt>
-                                <dd>-£20</dd>
+                                <dd>0</dd>
+                            </div>
+
+                            <div>
+                                <input type="hidden" name="jumlah_harga" value="{{ $pesanan->jumlah_harga }}" readonly>
+
                             </div>
 
                             <div class="flex justify-between !text-base font-medium">
                                 <dt>Total</dt>
-                                <dd>£200</dd>
+                                <dd>{{ $pesanan->jumlah_harga }}</dd>
                             </div>
                         </dl>
 
@@ -149,9 +152,9 @@
 
                         <div class="flex justify-end">
                             <div class="mt-8">
-                                <form action="{{ url('/checkout') }}" method='POST'>
+                                <form action="{{ url('/Pembayaran') }}" method='POST'>
                                     @csrf
-                                    <button type="button" onclick="requestCheckout()" id="pay-button"
+                                    <button type="button" onclick="requestPembayaran()" id="pay-button"
                                         class="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white">Checkout</button>
                                 </form>
 
@@ -165,6 +168,57 @@
     @endif
 
 </section>
+
+
+@push('script')
+<script>
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+    function requestPembayaran()
+    {
+        axios.post('/Pembayaran',
+        {
+            total: "{{ $pesanan->jumlah_harga }}"
+        },
+        {
+            headers: {
+                'X-CSRF-TOKEN': csrfToken,
+                'Content-Type': 'application/json',
+            }
+        })
+        .then((response)=>{
+            window.snap.pay(response.data.snap_token);
+        })
+    }
+</script>
+@endpush
+
+<script>
+    function onDeleteHandler(){
+            Swal.fire({
+                title: 'Apakah Anda Yakin?',
+                text: "Apakah Anda yakin anda akan menghapus!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Hapus!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                    'Deleted!',
+                    'Barang Berhasil Dihapus.',
+                    'success'
+                    );
+                    document.getElementById('submit').click();
+                }   
+            })
+        }
+    document.addEventListener('DOMContentLoaded', function () {
+       
+    })
+</script>
+
 
 
 

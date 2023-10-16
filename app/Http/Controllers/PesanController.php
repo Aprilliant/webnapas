@@ -22,7 +22,8 @@ class PesanController extends Controller
     {
         $barang = Barang::where('id', $id)->first();
         if ($request->jumlah_pesan > $barang->stok) {
-            return redirect('pesan/' . $id);
+            // return redirect('/')->with('gagal', 'Profile updated!');
+            return redirect('pesan/' . $id)->with('gagal', 'Jumlah yang Anda masukkan melebihi stok yang tersedia');
         }
         $cek_pesanan = Pesanan::where('user_id', Auth::user()->id)->where('status', 0)->first();
         if (empty($cek_pesanan)) {
@@ -59,7 +60,7 @@ class PesanController extends Controller
 
 
 
-        return redirect('profile');
+        return redirect('obat-obatan')->with('sukses', 'Berhasil Menambahkan Ke keranjang');
     }
 
     public function checkout()
@@ -100,4 +101,52 @@ class PesanController extends Controller
 
         return redirect('checkout');
     }
+
+    public function Pembayaran(Request $request)
+    {
+        // Set your Merchant Server Key
+        \Midtrans\Config::$serverKey = config('midtrans.server_key');
+        // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
+        \Midtrans\Config::$isProduction = false;
+        // Set sanitization on (default)
+        \Midtrans\Config::$isSanitized = true;
+        // Set 3DS transaction for credit card to true
+        \Midtrans\Config::$is3ds = true;
+    
+        $order = Pesanan::create([
+            'user_id' => Auth::user()->id,
+            'tanggal' => now(),
+            'jumlah_harga' => $request->total,
+            'status' => 'bayar'
+        ]);
+    
+        $params = array(
+            'transaction_details' => array(
+                'order_id' => $order->id,
+                'gross_amount' => $order->jumlah_harga,
+            ),
+            'customer_details' => array(
+                'name' => Auth::user()->name,
+                'email' => Auth::user()->email
+            ),
+        );
+    
+        $snapToken = \Midtrans\Snap::getSnapToken($params);
+    
+        // Tambahkan kode berikut setelah pembuatan pesanan baru
+        $pesanan = Pesanan::where('user_id', Auth::user()->id)->where('status', 0)->first();
+        $pesanan_id = $pesanan->id;
+        $pesanan->status = 1;
+        $pesanan->update();
+    
+        $pesanan_detail = PesananDetail::where('pesanan_id', $pesanan_id)->get();
+        foreach ($pesanan_detail as $psn) {
+            $barang = Barang::where('id', $psn->barang_id)->first();
+            $barang->stok = $barang->stok - $psn->jumlah;
+            $barang->update();
+        }
+    
+        return response()->json(['snap_token' => $snapToken, 'order' => $order]);
+    }
+    
 }

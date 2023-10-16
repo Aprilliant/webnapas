@@ -268,7 +268,7 @@ $doctorImages = [
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 9 4-4-4-4" />
                             </svg>
-                            <a href="{{ url('konsultasi') }}"
+                            <a href="{{ url('konsultasi-langsung/create') }}"
                                 class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Tambah
                                 Jadwal</a>
                         </div>

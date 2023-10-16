@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\appointment;
 use Illuminate\Http\Request;
-use App\Models\doctor_schedule;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
-class DoctorController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,20 +16,9 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        // Mendapatkan ID dari dokter yang saat ini login
-        $doctorId = Auth::id();
+        $user = User::where('id', Auth::user()->id)->first();
 
-        // Mendapatkan appointments yang berhubungan dengan dokter tersebut
-        $appointments = appointment::with('user') // Memuat relasi user (pasien)
-            ->where('doctor_id', $doctorId)
-            ->get();
-
-        return view('konsultasi-langsung', [
-            'doctors' => User::role('dokter')->with('schedules')->get(),
-            'appointments' => $appointments,
-
-
-        ]);
+        return view('profile-user', compact('user'));
     }
 
     /**
@@ -40,11 +28,7 @@ class DoctorController extends Controller
      */
     public function create()
     {
-        return view('dokter.create', [
-            'doctor' => User::role('dokter'),
-
-
-        ]);
+        //
     }
 
     /**
@@ -55,17 +39,7 @@ class DoctorController extends Controller
      */
     public function store(Request $request)
     {
-        $validateData = $request->validate([
-            'day' => 'required|max:255',
-            'max_appointments' => 'required|max:255',
-            'time_start' => 'required|max:255',
-            'time_end' => 'required|max:255',
-        ]);
-
-        $validateData['doctor_id'] = auth()->user()->id;
-        doctor_schedule::create($validateData);
-
-        return redirect('konsultasi-langsung')->with('success', 'Artikel berhasil ditambahkan!');
+        //
     }
 
     /**
@@ -76,10 +50,7 @@ class DoctorController extends Controller
      */
     public function show($id)
     {
-        return view('dokter.show', [
-            'doctor' => User::findOrFail($id),
-            'schedules' => doctor_schedule::where('doctor_id', $id)->get()
-        ]);
+        //
     }
 
     /**
@@ -100,9 +71,24 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+
+        $this->validate($request, [
+            'password'  => 'confirmed',
+        ]);
+
+        $user = User::where('id', Auth::user()->id)->first();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->alamat = $request->alamat;
+        if (!empty($request->password)) {
+            $user->password = Hash::make($request->password);
+        }
+
+        $user->update();
+        return redirect('profile');
     }
 
     /**

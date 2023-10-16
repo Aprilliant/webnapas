@@ -4,15 +4,18 @@ use App\Models\page;
 use App\Models\User;
 use App\Models\admin;
 use App\Models\Barang;
+use App\Models\Pesanan;
 use App\Models\Category;
 use App\Models\rumahsakit;
 use App\Models\appointment;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\pageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\roleController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PesanController;
@@ -25,6 +28,7 @@ use App\Http\Controllers\konsultasiController;
 use App\Http\Controllers\rumahsakitController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\pagePenyebabController;
+
 use App\Http\Controllers\artikelDokterController;
 use App\Http\Controllers\DashboardPostController;
 use App\Models\Post; //tambahkan/ import model post yang akan digunakan
@@ -95,7 +99,9 @@ Route::get('categories/{category:slug}', function (Category $category) {
 });
 
 // checkout
-Route::post('/checkout', [OrderController::class, 'checkout']);
+Route::resource('pesanan', orderController::class);
+Route::get('/pesanan/update-status/{id}/{status}', 'orderController@updateStatus')->name('pesanan.updateStatus');
+
 
 
 // admin 
@@ -112,6 +118,8 @@ Route::get('/admin-dashboard', function () {
 Route::get('/admin-login', function () {
     return view('admin.login', []);
 });
+
+
 
 
 
@@ -194,14 +202,15 @@ Route::post('pesan/{id}', [PesanController::class, 'pesan']);
 Route::get('/checkout', [PesanController::class, 'checkout']);
 Route::delete('checkout/{id}', [PesanController::class, 'delete']);
 
+Route::post('/Pembayaran', [PesanController::class, 'Pembayaran']);
+
 Route::get('/konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
 
 
 
-Route::get('profile', function () {
-    return view('profile-user');
-});
 
+
+Route::resource('profile', UserController::class);
 
 Route::resource('konsultasi-langsung', DoctorController::class);
 Route::resource('appointment', AppointmentController::class);
@@ -214,5 +223,13 @@ Route::get('ashma', function () {
 Route::get('antriandokter', function () {
     return view('antriandokter', [
         'appointment' => appointment::latest()->first(),
+    ]);
+});
+
+
+
+Route::get('riwayatOrder', function () {
+    return view('riwayatOrder', [
+        'riwayats' => Pesanan::latest()->first(),
     ]);
 });

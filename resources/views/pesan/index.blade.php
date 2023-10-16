@@ -1,7 +1,6 @@
 @extends('user.layout.layout')
 @section('content')
 
-
 <nav class="flex mt-5 -mb-10 mx-10 aria-label=" Breadcrumb">
     <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
@@ -198,11 +197,24 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
-      let msg = '{{ Session::get('gagal') }}';
+      let msg = "{{ session('gagal') }}";
       if (msg) {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
+          text: msg
+        });
+      }
+    });
+</script>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      let msg = "{{ session('sukses') }}";
+      if (msg) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Berhasil,',
           text: msg
         });
       }
