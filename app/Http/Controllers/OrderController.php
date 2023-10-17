@@ -49,7 +49,11 @@ class orderController extends Controller
      */
     public function show($id)
     {
-        //
+        $pesanan = Pesanan::with('pesanan_detail.barang')->find($id);
+        return view('admin.Pesanan.show', [
+            'title' => 'Show Pesanan',
+            'pesanan' => $pesanan
+        ]);
     }
 
     /**
@@ -60,7 +64,10 @@ class orderController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.Pesanan.edit', [
+            'title' => "edit status orderan",
+            'orderan' => pesanan::find($id),
+        ]);
     }
 
     /**
@@ -72,7 +79,12 @@ class orderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validateData = $request->validate([
+            'status' => 'required',
+        ]);
+
+        pesanan::where('id', $id)->update($validateData);
+        return redirect('pesanan')->with('success', 'Status Pesanan Berhasil Diubah!');
     }
 
     /**

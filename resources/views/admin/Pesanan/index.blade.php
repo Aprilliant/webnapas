@@ -2,11 +2,7 @@
 @section('content')
 
 
-@if(session()->has('success'))
-<div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
-    <span class="font-medium">{{ session('seccess') }}</span>
-</div>
-@endif
+
 
 
 
@@ -58,7 +54,9 @@
                     {{ $pesanan[0]->jumlah_harga }}
                 </td>
                 <td class="py-4 px-6">
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{ $pesanan[0]->status }}</span>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{
+                        $pesanan[0]->status }}</span>
                 </td>
                 <td class="py-4 px-6">
                     <div class="flex">
@@ -137,7 +135,9 @@
                     {{ $order->jumlah_harga }}
                 </td>
                 <td class="py-4 px-6">
-                    <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{ $order->status }}</span>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{
+                        $order->status }}</span>
                 </td>
                 <td class="py-4 px-6">
                     <div class="flex">

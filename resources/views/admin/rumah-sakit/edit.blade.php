@@ -2,7 +2,7 @@
 @section('content')
 
 <div>
-    <h1 class="mx-10">Create New Artikel</h1>
+    <h1 class="mx-10">Edit Rumah Sakit</h1>
 </div>
 
 <div class="mx-10 mt-10">
@@ -49,7 +49,7 @@
 
 
 
-        <button type="submit" onclick="swal('Good job!', 'Artikel Berhasil Dibuat!', 'success')"
+        <button type="submit" onclick="swal('Good job!', 'Rumah Sakit Berhasil Di Edit!', 'success')"
             class="mt-5 create inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
             Tambah Rumah Sakit
         </button>

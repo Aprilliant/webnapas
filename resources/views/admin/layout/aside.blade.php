@@ -16,7 +16,7 @@
         <ul class="flex flex-col pl-0 mb-0">
             <li class="mt-0.5 w-full">
 
-                <a @if (Request::path()=='admin/dashboard' )
+                <a @if (Request::path()=='/admin-dashboard' )
                     class="py-2.7 shadow-soft-xl rounded-lg bg-white font-semibold text-slate-700 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                     @else
                     class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
@@ -47,11 +47,11 @@
             </li>
 
             <li class="mt-0.5 w-full">
-                <a @if (Request::path()=='barang' )
+                <a @if (Request::path()=='/barang' )
                     class="py-2.7 shadow-soft-xl rounded-lg bg-slate-200 font-semibold text-slate-700 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                     @else
                     class="py-2.7  text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                    @endif href="barang">
+                    @endif href="/barang">
                     <div
                         class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                         <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -81,11 +81,11 @@
             </li>
 
             <li class="mt-0.5 w-full">
-                <a @if (Request::path()=='pesanan' )
+                <a @if (Request::path()=='/pesanan' )
                     class="py-2.7 shadow-soft-xl rounded-lg bg-slate-200 font-semibold text-slate-700 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                     @else
                     class="py-2.7  text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                    @endif href="pesanan">
+                    @endif href="/pesanan">
                     <div
                         class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                         <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
@@ -116,11 +116,11 @@
 
 
             <li class="mt-0.5 w-full">
-                <a @if (Request::path()=='rumah-sakit' )
+                <a @if (Request::path()=='/rumah-sakit' )
                     class="py-2.7 shadow-soft-xl rounded-lg bg-slate-200 font-semibold text-slate-700 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                     @else
                     class="py-2.7  text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                    @endif href="rumah-sakit">
+                    @endif href="/rumah-sakit">
                     <div
                         class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -134,11 +134,11 @@
             </li>
 
             <li class="mt-0.5 w-full">
-                <a @if (Request::path()=='admin-artikel' )
+                <a @if (Request::path()=='/admin-artikel' )
                     class="py-2.7 shadow-soft-xl rounded-lg bg-slate-200 font-semibold text-slate-700 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
                     @else
                     class="py-2.7  text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-                    @endif href="admin-artikel">
+                    @endif href="/admin-artikel">
                     <div
                         class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                         <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
@@ -191,7 +191,7 @@
 
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                         class="py-2.7  text-sm ease-nav-brand my-0  flex items-center whitespace-nowrap  transition-colors"
-                        type="button">Apa Itu Tbc<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                        type="button">Deskripsi<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>

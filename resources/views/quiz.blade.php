@@ -52,7 +52,7 @@
     </div>
 
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="">
+        <a href="{{ url('obstruktif') }}">
             <img src="https://human.biodigital.com/ws/user/image/v1-0/LpMZS_jzo6jivo_v1-0.png" alt="Product"
                 class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
@@ -79,7 +79,7 @@
     </div>
 
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="">
+        <a href="{{ url('bronkitis') }}">
             <img src="https://human.biodigital.com/ws/user/image/v1-0/LpMcG_kj5n6r3k_v1-0.png" alt="Product"
                 class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
@@ -100,7 +100,7 @@
     </div>
 
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="">
+        <a href="{{ url('radang') }}">
             <img src="https://human.biodigital.com/ws/user/image/v1-0/LpMaN_jmcbvtyz_v1-0.png" alt="Product"
                 class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
@@ -124,7 +124,7 @@
 
 
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="">
+        <a href="{{ url('tuberkulosis') }}">
             <img src="https://human.biodigital.com/ws/user/image/v1-0/LpMdI_khewyiml_v1-0.png" alt="Product"
                 class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
@@ -146,7 +146,7 @@
 
 
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="">
+        <a href="{{ url('covid') }}">
             <img src="https://human.biodigital.com/ws/user/image/v1-0/LpMe9_e25z3wi7_v1-0.png" alt="Product"
                 class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
