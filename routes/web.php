@@ -78,7 +78,7 @@ Route::get('/quiz', function () {
 
 Route::get('/obat-obatan', function () {
     return view('profile', [
-        'barang' => Barang::all()
+        'barang' => Barang::latest()->get()
     ]);
 });
 
