@@ -45,7 +45,7 @@ use App\Models\Post; //tambahkan/ import model post yang akan digunakan
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
 // Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
@@ -172,7 +172,6 @@ Route::post('upload', [pageController::class, 'upload'])->name('ckeditor.upload'
 // Role
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/role', [roleController::class, 'index'])->middleware('cekRole');
-    Route::post('/choose-role', [roleController::class, 'chooseRole']);
     Route::resource('/artikel', artikelDokterController::class);
     Route::resource('/konsultasi', konsultasiController::class);
 });
@@ -220,6 +219,30 @@ Route::get('ashma', function () {
 });
 
 
+Route::get('obstruktif', function () {
+    return view('penyakit3d.2');
+});
+
+
+Route::get('bronkitis', function () {
+    return view('penyakit3d.3');
+});
+
+
+Route::get('radang', function () {
+    return view('penyakit3d.4');
+});
+
+
+Route::get('tuberkulosis', function () {
+    return view('penyakit3d.5');
+});
+
+Route::get('covid', function () {
+    return view('penyakit3d.6');
+});
+
+
 Route::get('antriandokter', function () {
     return view('antriandokter', [
         'appointment' => appointment::latest()->first(),
@@ -229,7 +252,11 @@ Route::get('antriandokter', function () {
 
 
 Route::get('riwayatOrder', function () {
+    $user = auth()->user(); // Mendapatkan pengguna yang sedang login
+    $riwayats = Pesanan::where('user_id', $user->id)->with('pesanan_detail.barang')
+        ->latest()->paginate(10);
+
     return view('riwayatOrder', [
-        'riwayats' => Pesanan::latest()->first(),
+        'riwayats' => $riwayats,
     ]);
 });

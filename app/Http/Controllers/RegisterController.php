@@ -31,7 +31,7 @@ class RegisterController extends Controller
         $validateDate['password'] = bcrypt($validateDate['password']);
 
         User::create($validateDate);
-        dd('oke');
+    
         // $request->session()->flash('berhasil', 'Silahkan Login');
 
         return redirect('/login')->with('berhasil', 'Silahkan Login');

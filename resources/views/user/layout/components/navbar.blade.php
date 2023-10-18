@@ -214,7 +214,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('riwayat-order') }}"
+                    <a href="{{ url('riwayatOrder') }}"
                         class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Riwayat
                         Belanja
                     </a>

@@ -102,11 +102,12 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-7">
-                                    <h3 class="upper-case dark-color font-600">Stay Home</h3>
+                                    <h3 class="upper-case dark-color font-600">Stay Healthy</h3>
                                     <h1 class="upper-case font-800 green-color">Stay Safe</h1>
-                                    <p class="dark-color">Italy reported 683 new deaths in the coronavirus pandemic,
-                                        bringing its total to 7,503. Spain, meanwhile, recorded more than 700 deaths
-                                        over the past 24 hours.</p>
+                                    <p class="dark-color">ISPA adalah kondisi kesehatan yang menyerang sistem
+                                        pernapasan, umum di Indonesia. Gejalanya meliputi batuk dan hidung tersumbat,
+                                        dan dalam kasus serius, bisa menyebabkan kesulitan bernapas. Paling berdampak
+                                        pada anak-anak dan orang lanjut usia</p>
                                     <p class="text-left mt-30"><a class="btn btn-green btn-circle btn-md">About
                                             Virus</a> </p>
                                 </div>
@@ -269,14 +270,14 @@
 
     <!--=== Video Start ===-->
     <section class="parallax-bg fixed-bg pt-200 pb-200"
-        style="background-image: url(assets/images/background/parallax-bg.jpg);">
+        style="background-image: url(assets/images/background/tumb.jpg);">
         <div class="gradient-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-md-offset-5">
                     <div class="center-layout">
                         <div class="v-align-middle"> <a class="popup-youtube"
-                                href="https://www.youtube.com/watch?v=sU3FkzUKHXU">
+                                href="https://youtu.be/ezVT2gEWtAs?si=7OdoHS0VSkp3euka">
                                 <div class="play-button"><i class="eicon mdi mdi-play"></i> </div>
                             </a> </div>
                     </div>
@@ -1141,44 +1142,46 @@
                         <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
                                 alt="" /> </div>
                         <div class="post-info">
-                            <h3><a href="blog-grid.html">Economic Policies for the COVID-19 War</a></h3>
-                            <p>The COVID-19 pandemic is a crisis like no other. It feels like a war, and in many ways it
-                                is.</p>
-                            <div class="date">7 hours ago</div>
-                            <a class="readmore" href="#"><span>Read More <i
-                                        class="eicon mdi mdi-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <!--=== Post End ===-->
-
-                <div class="col-md-4">
-                    <div class="post">
-                        <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
-                                alt="" /> </div>
-                        <div class="post-info">
-                            <h3><a href="blog-grid.html">Coronavirus at Record High</a></h3>
-                            <p>The coronavirus continues to spread. As more countries impose quarantines and social
-                                distancing.</p>
-                            <div class="date pink-color">Yesterday</div>
-                            <a class="readmore" href="#"><span>Read More <i
-                                        class="eicon mdi mdi-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                <!--=== Post End ===-->
-
-                <div class="col-md-4">
-                    <div class="post">
-                        <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
-                                alt="" /> </div>
-                        <div class="post-info">
-                            <h3><a href="blog-grid.html">Maintaining Banking System Safety amid the COVID-19 Crisis</a>
+                            <h3><a href="blog-grid.html">Kasus ISPA Meningkat Seiring Naiknya Kadar Polusi Udara</a>
                             </h3>
-                            <p>Today we face economic upheaval potentially more severe than we witnessed during the
-                                global financial crisis.</p>
-                            <div class="date blue-color">January 21, 2020</div>
-                            <a class="readmore" href="#"><span>Read More <i
+                            <p>Berdasarkan data yang disampaikan Imran, kasus ISPA non-pneumonia (menyerang saluran
+                                pernafasan )</p>
+                            <div class="date">7 hours ago</div>
+                            <a class="readmore" href="{{ url('artikel') }}"><span>Read More <i
+                                        class="eicon mdi mdi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--=== Post End ===-->
+
+                <div class="col-md-4">
+                    <div class="post">
+                        <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
+                                alt="" /> </div>
+                        <div class="post-info">
+                            <h3><a href="blog-grid.html">Menkes: Pasien ISPA Naik Jadi 200.000 Orang Akibat Polusi</a>
+                            </h3>
+                            <p>Menteri Kesehatan (Menkes) Budi Gunadi Sadikin mengungkapkan pasien ISPA sebelum
+                                Covid-19, mencapai 50.000 pasien.</p>
+                            <div class="date pink-color">Yesterday</div>
+                            <a class="readmore" href="{{ url('artikel') }}"><span>Read More <i
+                                        class="eicon mdi mdi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--=== Post End ===-->
+
+                <div class="col-md-4">
+                    <div class="post">
+                        <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
+                                alt="" /> </div>
+                        <div class="post-info">
+                            <h3><a href="blog-grid.html">Pasien ISPA Meroket Akibat Polusi, Menkes Akhirnya Buka
+                                    Suara</a>
+                            </h3>
+                            <p>Polusi udara di Jakarta telah berdampak buruk bagi kesehatan warga. </p>
+                            <div class="date blue-color">Yesterday</div>
+                            <a class="readmore" href="{{ url('artikel') }}"><span>Read More <i
                                         class="eicon mdi mdi-arrow-right"></i></span></a>
                         </div>
                     </div>
@@ -1199,8 +1202,7 @@
                         <div class="widget widget-links">
                             <h5 class="widget-title">About Us</h5>
                             <div class="footer-about">
-                                <p>As of April 7, more than 74,000 people worldwide have died of COVID-19, the highly
-                                    infectious respiratory disease caused by the coronavirus. </p>
+                                <p>WebNapas </p>
                                 <ul class="social-media">
                                     <li><a href="#" class="mdi mdi-facebook"></a></li>
                                     <li><a href="#" class="mdi mdi-twitter"></a></li>
@@ -1238,13 +1240,13 @@
                             <h5 class="widget-title">Contact Us</h5>
                             <ul class="footer-contact">
                                 <li><i class="mdi mdi-map-marker"></i>
-                                    <p>Schönhauser Allee 167c 10435 Berlin Germany</p>
+                                    <p>Banyumas,Jawa Tengah,Indonesia</p>
                                 </li>
                                 <li><i class="mdi mdi-email"></i>
-                                    <p><a href="#">envato@gmail.com</a></p>
+                                    <p><a href="#">20102172@ittelkom-pwt.ac.id</a></p>
                                 </li>
                                 <li><i class="mdi mdi-phone"></i>
-                                    <p>+49 30 47373795</p>
+                                    <p>081919898656</p>
                                 </li>
                             </ul>
                         </div>
@@ -1258,7 +1260,7 @@
                     <div class="col-md-2 col-md-offset-5">
                         <div class="logo-footer">
                             <a href="index.html">
-                                <img class="img-responsive" src="{{ asset('img/logo-footer.png') }}" alt="chaos-logo" />
+                                <img class="img-responsive" src="{{ asset('img/webnapas.png') }}" alt="chaos-logo" />
                             </a>
                         </div>
 
@@ -1266,8 +1268,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="copy-right">© 2020 Infectious Template by <span class="pink-color">Incognito
-                                Themes</span></div>
+                        <div class="copy-right">© 2023 WebNapas <span class="pink-color">Nothing To Lose Team</span>
+                        </div>
                     </div>
                 </div>
 
