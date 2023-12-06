@@ -43,8 +43,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i
                         class="mdi mdi-menu"></i> </button>
                 <div class="logo"> <a href="index.html"> <img class="logo logo-display"
-                            src="{{ asset('img/webnapas.png') }}" alt=""> <img class="logo logo-scrolled"
-                            src="{{ asset('img/webnapas.png') }}" alt=""> </a> </div>
+                            src="{{ asset('img/logo-pneumonia.png') }}" alt=""> <img class="logo logo-scrolled"
+                            src="{{ asset('img/logo-pneumonia.png') }}" alt=""> </a> </div>
             </div>
             <!--=== End Header Navigation ===-->
 
@@ -79,11 +79,12 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3 class="upper-case dark-color font-600">Penyakit</h3>
-                                    <h1 class="upper-case font-800 default-color">ISPA</h1>
-                                    <p class="dark-color">Penyakit Infeksi Saluran Pernapasan Akut (ISPA) adalah suatu
-                                        kondisi medis yang disebabkan oleh berbagai jenis mikroorganisme, termasuk virus
-                                        dan bakteri. Penyakit ini menyerang sistem pernapasan dan bisa menyebabkan
-                                        gejala mulai dari ringan hingga serius.
+                                    <h1 class="upper-case font-800 default-color">Paru</h1>
+                                    <p class="dark-color"> Paru-paru adalah salah satu organ yang berperan penting dalam
+                                        menjalankan sistem respirasi. Ketika udara mencapai paru-paru, akan
+                                        terjadi proses pertukaran antara oksigen dari luar tubuh, dengan karbon dioksida
+                                        dari dalam darah.Jenis-jenis penyakit paru-paru di
+                                        antaranya adalah Pneumonia
                                     </p>
                                     <p class="text-left mt-30"><a class="btn btn-color btn-circle btn-md">How to
                                             Protect</a> </p>
@@ -102,14 +103,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-7">
-                                    <h3 class="upper-case dark-color font-600">Stay Healthy</h3>
-                                    <h1 class="upper-case font-800 green-color">Stay Safe</h1>
-                                    <p class="dark-color">ISPA adalah kondisi kesehatan yang menyerang sistem
-                                        pernapasan, umum di Indonesia. Gejalanya meliputi batuk dan hidung tersumbat,
-                                        dan dalam kasus serius, bisa menyebabkan kesulitan bernapas. Paling berdampak
-                                        pada anak-anak dan orang lanjut usia</p>
+                                    <h3 class="upper-case dark-color font-600">Penyakit</h3>
+                                    <h1 class="upper-case font-800 green-color">Pneumonia</h1>
+                                    <p class="dark-color">Pneumonia adalah peradangan paru-paru yang disebabkan oleh
+                                        infeksi. Pneumonia bisa menimbulkan gejala yang ringan hingga berat. Beberapa
+                                        gejala yang umum dialami penderita pneumonia adalah batuk berdahak, demam, dan
+                                        sesak napas.</p>
                                     <p class="text-left mt-30"><a class="btn btn-green btn-circle btn-md">About
-                                            Virus</a> </p>
+                                            Pneumonia</a> </p>
                                 </div>
                             </div>
                         </div>
@@ -126,12 +127,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 heading-style-one box-title-two text-left">
-                    <h6 class="yellow-color text-uppercase">Apa Itu Ispa ?</h6>
-                    <h2><span class="font-700">Penyakit Infeksi Saluran Pernapasan Akut</h2>
-                    <p>ISPA adalah kondisi kesehatan yang menyerang sistem pernapasan, umum di Indonesia. Gejalanya
-                        meliputi batuk dan hidung tersumbat, dan dalam kasus serius, bisa menyebabkan kesulitan
-                        bernapas. Paling berdampak pada anak-anak dan orang lanjut usia.Beberapa jenis virus yang dapat
-                        menyebabkan orang terkena ISPA adalah sebagai berikut:</p>
+                    <h6 class="yellow-color text-uppercase">Apa Itu Pneumonia ?</h6>
+                    <h2><span class="font-700">Penyakit Pneumonia</h2>
+                    <p>Pneumonia adalah peradangan paru-paru yang disebabkan oleh infeksi. Pneumonia bisa menimbulkan
+                        gejala yang ringan hingga berat. Beberapa gejala yang umum dialami penderita pneumonia adalah
+                        batuk berdahak, demam, dan sesak napas. Beberapa jenis virus yang dapat
+                        menyebabkan orang terkena Pneumonia adalah sebagai berikut:</p>
                 </div>
             </div>
 
@@ -139,9 +140,9 @@
                 <div class="col-md-4">
                     <div class="feature-box text-center feature-box-rounded mb-20">
                         <i class="virus-icon img-icon"></i>
-                        <h3 class="font-600">Rhinovirus</h3>
-                        <p>Rhinovirus adalah infeksi viral yang sangat umum pada manusia dan umumnya menyebabkan
-                            pilek.</p>
+                        <h3 class="font-600">Adenovirus</h3>
+                        <p>Adenovirus adalah kelompok virus yang dapat menyebabkan infeksi pada beberapa bagian dalam
+                            tubuh, seperti saluran pernapasan, paru-paru.</p>
                         <p class="mt-30">
                             <a class="btn btn-green btn-sm btn-circle">Read More</a>
                         </p>
@@ -150,8 +151,9 @@
                 <div class="col-md-4">
                     <div class="feature-box text-center feature-box-rounded mb-20">
                         <i class="hand-icon img-icon"></i>
-                        <h3 class="font-600">Pneumokokus</h3>
-                        <p>penyakit pneumokokus diakibatkan oleh bakteri streptococcus pneumoniae.menyebabkan pneumonia.
+                        <h3 class="font-600">Hantavirus</h3>
+                        <p>Hantavirus adalah virus yang menyebabkan gangguan pada paru-paru (hantavirus
+                            pulmonary syndrome) atau pembuluh darah dan ginjal.
                         </p>
                         <p class="mt-30">
                             <a class="btn btn-pink btn-sm btn-circle">Read More</a>
@@ -161,9 +163,9 @@
                 <div class="col-md-4">
                     <div class="feature-box text-center feature-box-rounded">
                         <i class="mask-icon img-icon"></i>
-                        <h3 class="font-600">Adenovirus</h3>
-                        <p>Adenovirus adalah kelompok virus yang menyebabkan infeksi pada saluran pernapasan dan paru
-                            paru</p>
+                        <h3 class="font-600">Virus influenza</h3>
+                        <p>Flu atau influenza merupakan penyakit yang disebabkan oleh infeksi virus yang dapat menyerang
+                            hidung, tenggorokan, dan paru-paru.</p>
                         <p class="mt-30">
                             <a class="btn btn-purple btn-sm btn-circle">Read More</a>
                         </p>
@@ -214,10 +216,11 @@
             <div class="row">
                 <div class="col-md-6 heading-style-one box-title-two text-left">
                     <h6 class="red-color text-uppercase">Bagaimana Cara Virus Menyebar ?</h6>
-                    <h2><span class="font-700">Penyebaran Virus Ispa</h2>
-                    <p>Untuk penularan ISPA sendiri dapat terjadi melalui kontak dengan percikan air liur orang yang
+                    <h2><span class="font-700">Penyebaran Virus Pneumonia</h2>
+                    <p>Untuk penularan Pneumonia sendiri dapat terjadi melalui kontak dengan percikan air liur orang
+                        yang
                         terinfeksi, bisa lewat penyebaran udara ataupun sentuhan dengan benda yang terkontaminasi virus
-                        atau bakteri penyebab ISPA. </p>
+                        atau bakteri penyebab Pneumonia. </p>
                 </div>
             </div>
 
@@ -250,13 +253,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 heading-style-one box-title">
-                    <h6 class="default-color text-uppercase">Gejala Penyakit Infeksi Saluran Pernapasan Akut</h6>
+                    <h6 class="default-color text-uppercase">Gejala Penyakit Pneumonia</h6>
                     <h2><span class="font-700">Apa Saja gejalanya ?</span></h2>
-                    <p>Infeksi Saluran Pernapasan Akut (ISPA) dapat menimbulkan berbagai gejala, sehingga cara pasti
+                    <p>Infeksi Pneumonia dapat menimbulkan berbagai gejala, sehingga cara pasti
                         untuk mendiagnosisnya adalah dengan memeriksakan diri ke dokter. </p>
                     <div class="welcome-style-two mt-30">
                         <div class="thin-border-purple thin-borders pull-left"></div>
-                        <p class="pull-left">Namun, ada beberapa gejala umum yang biasanya dirasakan oleh pengidap ISPA,
+                        <p class="pull-left">Namun, ada beberapa gejala umum yang biasanya dirasakan oleh pengidap
+                            Pneumonia,
                             berikut di antaranya:</p>
                     </div>
                 </div>
@@ -292,9 +296,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 heading-style-one box-title-two text-left">
-                    <h6 class="red-color text-uppercase">Cara Mencegah Virus ISPA</h6>
-                    <h2><span class="font-700">Pencegahan ISPA</h2>
-                    <p>Anda dapat melindungi diri sendiri dan membantu mencegah penyebaran virus Jika Anda :</p>
+                    <h6 class="red-color text-uppercase">Cara Mencegah Pneumonia</h6>
+                    <h2><span class="font-700">Pencegahan Pneumonia</h2>
+                    <p>Anda dapat melindungi diri sendiri dan membantu mencegah penyebaran virus:</p>
                 </div>
             </div>
 
@@ -524,17 +528,20 @@
                             <!--== Nav tabs ==-->
                             <ul class="nav nav-tabs text-center" role="tablist">
                                 <li role="presentation" class="active"><a href="#disease" role="tab"
-                                        data-toggle="tab">Siapa saja yang berisiko terkena ISPA?
+                                        data-toggle="tab">Siapa saja yang berisiko terkena Pneumonia?
                                     </a></li>
                                 <li role="presentation"><a href="#protect" role="tab" data-toggle="tab">Apakah ada
-                                        vaksin untuk ISPA?</a></li>
-                                <li role="presentation"><a href="#symtom" role="tab" data-toggle="tab">Bagaimana ISPA
+                                        vaksin untuk Pneumonia?</a></li>
+                                <li role="presentation"><a href="#symtom" role="tab" data-toggle="tab">Bagaimana
+                                        Pneumonia
                                         diobati?</a></li>
                                 <li role="presentation"><a href="#spread" role="tab" data-toggle="tab">Kapan saya harus
                                         pergi ke dokter?</a></li>
-                                <li role="presentation"><a href="#outbreak" role="tab" data-toggle="tab">Apakah ISPA
+                                <li role="presentation"><a href="#outbreak" role="tab" data-toggle="tab">Apakah
+                                        Pneumonia
                                         bisa menular?</a></li>
-                                <li role="presentation"><a href="#animal" role="tab" data-toggle="tab">Apakah ISPA bisa
+                                <li role="presentation"><a href="#animal" role="tab" data-toggle="tab">Apakah Pneumonia
+                                        bisa
                                         menyebabkan komplikasi?</a></li>
                             </ul>
                         </div>
@@ -547,11 +554,11 @@
                                             <div class="panel-heading">
                                                 <h3 class="panel-title"> <a data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseOne"> Apakah ada
-                                                        vaksin untuk ISPA? </a> </h3>
+                                                        vaksin untuk Pneumonia? </a> </h3>
                                             </div>
                                             <div id="collapseOne" class="panel-collapse collapse in">
                                                 <div class="panel-body">
-                                                    <p>Tidak ada vaksin khusus untuk ISPA karena penyakit ini bisa
+                                                    <p>Tidak ada vaksin khusus untuk Pneumonia karena penyakit ini bisa
                                                         disebabkan oleh berbagai jenis mikroorganisme. Namun, vaksinasi
                                                         untuk penyakit tertentu seperti flu bisa membantu mengurangi
                                                         risiko.</p>
@@ -562,7 +569,7 @@
                                             <div class="panel-heading">
                                                 <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseTwo">Virus yang
-                                                        Menyebabkan ISPA</a> </h3>
+                                                        Menyebabkan Pneumonia</a> </h3>
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse">
                                                 <div class="panel-body">
@@ -576,7 +583,7 @@
                                             <div class="panel-heading">
                                                 <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseThree">Apa Saja Gejala
-                                                        ISPA</a> </h3>
+                                                        Pneumonia</a> </h3>
                                             </div>
                                             <div id="collapseThree" class="panel-collapse collapse">
                                                 <div class="panel-body">
@@ -1133,7 +1140,7 @@
             <div class="row">
                 <div class="col-md-6 heading-style-one box-title">
                     <h6 class="default-color text-uppercase">Blog Terbaru Kami</h6>
-                    <h2><span class="font-700">Berita Terbaru Mengenai Ispa</span></h2>
+                    <h2><span class="font-700">Berita Terbaru Mengenai Pneumonia</span></h2>
                 </div>
             </div>
             <div class="row mt-50">
@@ -1142,9 +1149,10 @@
                         <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
                                 alt="" /> </div>
                         <div class="post-info">
-                            <h3><a href="blog-grid.html">Kasus ISPA Meningkat Seiring Naiknya Kadar Polusi Udara</a>
+                            <h3><a href="blog-grid.html">Kasus Pneumonia Meningkat Seiring Naiknya Kadar Polusi
+                                    Udara</a>
                             </h3>
-                            <p>Berdasarkan data yang disampaikan Imran, kasus ISPA non-pneumonia (menyerang saluran
+                            <p>Berdasarkan data yang disampaikan Imran, kasus Pneumonia non-pneumonia (menyerang saluran
                                 pernafasan )</p>
                             <div class="date">7 hours ago</div>
                             <a class="readmore" href="{{ url('artikel') }}"><span>Read More <i
@@ -1159,9 +1167,10 @@
                         <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
                                 alt="" /> </div>
                         <div class="post-info">
-                            <h3><a href="blog-grid.html">Menkes: Pasien ISPA Naik Jadi 200.000 Orang Akibat Polusi</a>
+                            <h3><a href="blog-grid.html">Menkes: Pasien Pneumonia Naik Jadi 200.000 Orang Akibat
+                                    Polusi</a>
                             </h3>
-                            <p>Menteri Kesehatan (Menkes) Budi Gunadi Sadikin mengungkapkan pasien ISPA sebelum
+                            <p>Menteri Kesehatan (Menkes) Budi Gunadi Sadikin mengungkapkan pasien Pneumonia sebelum
                                 Covid-19, mencapai 50.000 pasien.</p>
                             <div class="date pink-color">Yesterday</div>
                             <a class="readmore" href="{{ url('artikel') }}"><span>Read More <i
@@ -1176,7 +1185,7 @@
                         <div class="post-img"> <img class="img-responsive" src="{{ asset('img/post/post-03.jpg') }}"
                                 alt="" /> </div>
                         <div class="post-info">
-                            <h3><a href="blog-grid.html">Pasien ISPA Meroket Akibat Polusi, Menkes Akhirnya Buka
+                            <h3><a href="blog-grid.html">Pasien Pneumonia Meroket Akibat Polusi, Menkes Akhirnya Buka
                                     Suara</a>
                             </h3>
                             <p>Polusi udara di Jakarta telah berdampak buruk bagi kesehatan warga. </p>

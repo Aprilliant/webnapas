@@ -5,7 +5,7 @@
 
 <div class="mx-10 my-10 font-Poppins">
     <h1 class="text-xl">Rekomendasi Rumah Sakit </h1>
-    <p class="text-sm mb-4">Berikut adalah rekomendasi rumah sakit untuk penderita TBC</p>
+    <p class="text-sm mb-4">Berikut adalah rekomendasi rumah sakit untuk penderita Pneumonia</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         @foreach($rumahsakits as $rumahsakit)

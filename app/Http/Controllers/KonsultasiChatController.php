@@ -3,13 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\konsultasi;
 use App\Models\appointment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 
-class konsultasiController extends Controller
+class KonsultasiChatController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -52,19 +50,7 @@ class konsultasiController extends Controller
      */
     public function store(Request $request)
     {
-        $validateData = $request->validate([
-            'namaDokter' => 'required',
-            'spesialis' => 'required',
-            'image' => 'required'
-        ]);
-
-        if ($request->file('image')) {
-            $validateData['image'] = $request->file('image')->store('post-images');
-        }
-
-        $validateData['user_id'] = auth()->user()->id;
-        konsultasi::create($validateData);
-        return redirect('konsultasi')->with('success', 'Artikel berhasil ditambahkan!');
+        //
     }
 
     /**
@@ -86,10 +72,7 @@ class konsultasiController extends Controller
      */
     public function edit($id)
     {
-        return view('konsultasi', [
-            'title' => 'Edit Artikel',
-            'konsultasi' => konsultasi::find($id)
-        ]);
+        //
     }
 
     /**
@@ -101,26 +84,7 @@ class konsultasiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $rules = [
-            'namaDokter' => 'required',
-            'spesialis' => 'required',
-            'image' => 'required'
-        ];
-
-        $validateData = $request->validate($rules);
-        if ($request->file('image')) {
-            if ($request->oldImage) {
-                Storage::delete([$request->oldImage]);
-            }
-
-
-            $validateData['image'] = $request->file('image')->store('post-images');
-        }
-
-        konsultasi::where('id', $id)->update($validateData);
-
-
-        return redirect('konsultasi')->with('success', 'Artikel berhasil ditambahkan!');
+        //
     }
 
     /**

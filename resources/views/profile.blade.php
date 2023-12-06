@@ -87,6 +87,11 @@
 
 </section>
 
+<div class="mx-10 mt-5">
+    {{ $barang->links() }}
+
+</div>
+
 
 
 

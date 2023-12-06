@@ -94,8 +94,8 @@ $doctorImages = [
 
         <div class="rounded overflow-hidden shadow-lg flex flex-col">
             <div class="relative"><a href="{{ url('konsultasi-langsung') }}/{{ $doctor->id }}">
-                    <img class="w-full" src="{{ $randomImage }}?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                        alt="Sunset in the mountains">
+                    <img class="w-full" src="{{ asset('storage/users-avatar/' . $doctor->avatar) }}"
+                        alt="Sunset in the mountains" style="width: 300px; height: 200px; object-fit: cover;">
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
                     </div>
@@ -239,7 +239,7 @@ $doctorImages = [
     <div
         class="mt-10 flex flex-col items-start justify-center space-y-4 py-8  sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
         <div class="max-w-lg">
-            <h1 class="text-2xl font-bold text-gray-800">Dr.{{ auth()->user()->name }}</h1>
+            <h1 class="text-2xl font-bold text-gray-800">{{ auth()->user()->name }}</h1>
             <p class="mt-2 text-gray-600">Konsultasi mengenai berbagai kondisi dan penyakit paru-paru.
                 Pemeriksaan dan diagnosis penyakit paru-paru.
                 Edukasi mengenai pencegahan dan pengelolaan penyakit paru-paru.

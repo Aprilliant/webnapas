@@ -103,7 +103,7 @@
                                                             <td class="pad">
                                                                 <h1
                                                                     style="margin: 0; color: #8069b9; direction: ltr; font-family: TimesNewRoman, 'Times New Roman', Times, Beskerville, Georgia, serif; font-size: 38px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;">
-                                                                    <span class="tinyMce-placeholder">WebNapas</span>
+                                                                    <span class="tinyMce-placeholder">Pneumonia</span>
                                                                 </h1>
                                                             </td>
                                                         </tr>

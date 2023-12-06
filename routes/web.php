@@ -17,7 +17,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\roleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\OrderController;
+
 use App\Http\Controllers\PesanController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\DoctorController;
@@ -31,6 +31,7 @@ use App\Http\Controllers\pagePenyebabController;
 
 use App\Http\Controllers\artikelDokterController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\OrderFixController;
 use App\Models\Post; //tambahkan/ import model post yang akan digunakan
 
 /*
@@ -78,7 +79,7 @@ Route::get('/quiz', function () {
 
 Route::get('/obat-obatan', function () {
     return view('profile', [
-        'barang' => Barang::latest()->get()
+        'barang' => Barang::latest()->paginate(6)
     ]);
 });
 
@@ -99,10 +100,8 @@ Route::get('categories/{category:slug}', function (Category $category) {
 });
 
 // checkout
-Route::resource('pesanan', orderController::class);
-Route::get('/pesanan/update-status/{id}/{status}', 'orderController@updateStatus')->name('pesanan.updateStatus');
-
-
+Route::resource('pesanan', OrderFixController::class);
+Route::get('/pesanan/update-status/{id}/{status}', [OrderFixController::class, 'updateStatus'])->name('pesanan.updateStatus');
 
 // admin 
 // Route::get('/admin-login', [AdminLoginController::class, 'index']);

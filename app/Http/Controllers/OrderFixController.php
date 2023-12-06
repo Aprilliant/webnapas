@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Pesanan;
+use Illuminate\Http\Request;
 
-class orderController extends Controller
+class OrderFixController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class orderController extends Controller
      */
     public function index()
     {
-        return view('Admin.Pesanan.index', [
+        return view('admin.Pesanan.index', [
             'title' => "Orderan Masuk",
             'pesanan' => Pesanan::latest()->paginate(5),
         ]);
