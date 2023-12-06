@@ -1269,7 +1269,8 @@
                     <div class="col-md-2 col-md-offset-5">
                         <div class="logo-footer">
                             <a href="index.html">
-                                <img class="img-responsive" src="{{ asset('img/webnapas.png') }}" alt="chaos-logo" />
+                                <img class="img-responsive" src="{{ asset('img/logo-pneumonia.png') }}"
+                                    alt="chaos-logo" />
                             </a>
                         </div>
 

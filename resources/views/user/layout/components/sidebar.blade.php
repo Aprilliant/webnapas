@@ -11,7 +11,7 @@
         </svg>
     </button>
     <div id="navbar-default" class="mx-auto py-10 hidden md:block md:fixed md:px-16">
-        <img src="{{ asset('img/logo-new.png') }}" alt="">
+        <img class="w-32" src="{{ asset('img/logo-pneumonia.png') }}" alt="">
 
         <ul>
             <li class="flex space-x-2 mt-10 cursor-pointer active:text-[#EC5252] hover:text-[#EC5252] duration-150">
